@@ -14,7 +14,7 @@ public class U2 extends Rocket{
     @Override
     public boolean launch() {
         double chance = 0.04 * (this.weight - WEIGHT) / (MAX_WEIGHT - WEIGHT);
-        if(chance < CHANCE){
+        if(chance > Math.random()){
             return false;
         }
         return true;
@@ -23,7 +23,7 @@ public class U2 extends Rocket{
     @Override
     public boolean land() {
         double chance = 0.08 * (this.weight - WEIGHT) / (MAX_WEIGHT - WEIGHT);
-        if(chance < CHANCE){
+        if(chance > Math.random()){
             return false;
         }
         return true;

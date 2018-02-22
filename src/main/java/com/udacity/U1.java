@@ -15,7 +15,7 @@ public class U1 extends Rocket{
     public boolean launch() {
         double chance = 0.05 * (this.weight - WEIGHT)  / (MAX_WEIGHT - WEIGHT);
         System.out.println("launch chance" + chance);
-        if(chance < CHANCE){
+        if(chance > Math.random()){
             return false;
         }
         return true;
@@ -25,7 +25,7 @@ public class U1 extends Rocket{
     public boolean land() {
         double chance = 0.01 * (this.weight - WEIGHT) / (MAX_WEIGHT - WEIGHT);
         System.out.println("land chance" + chance);
-        if(chance < CHANCE){
+        if(chance > Math.random()){
             return false;
         }
         return true;
