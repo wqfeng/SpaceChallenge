@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SpaceChallenge:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpaceChallenge_jar</output-path>
+    <root id="archive" name="SpaceChallenge.jar">
+      <element id="module-output" name="SpaceChallenge" />
+    </root>
+  </artifact>
+</component>
